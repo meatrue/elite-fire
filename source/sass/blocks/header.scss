@@ -1,0 +1,22 @@
+.header {
+  padding: 76px $padding 81px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+
+.header__logo {
+  margin-right: 60px;
+}
+
+.header__navigation-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  margin-right: 60px;
+}

@@ -1,0 +1,26 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo__main {
+  min-width: 140px;
+  color: $color-base-white;
+  letter-spacing: 0.1em;
+  user-select: none;
+
+  @include font-parameters ($ff-logo, 20px, 3.5, 400);
+}
+
+.logo__additional {
+  max-width: 99px;
+  margin-left: 39px;
+  color: $color-additional-dark;
+  letter-spacing: 0.05em;
+
+  @include font-parameters ($ff-base, 12px, 1.5, 400);
+
+  @include vp-1199 {
+    display: none;
+  }
+}

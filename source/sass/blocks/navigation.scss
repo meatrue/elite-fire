@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation__item {
+  padding: 4px 0;
+
+  &:not(:last-child) {
+    margin-right: 45px;
+  }
+}
+
+.navigation__link {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #949494;
+}

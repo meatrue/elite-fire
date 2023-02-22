@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Lab Grotesque"),
+    url("../fonts/LabGrotesque-Thin.woff2") format("woff2"),
+    url("../fonts/LabGrotesque-Thin.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lab Grotesque"),
+    url("../fonts/LabGrotesque-Light.woff2") format("woff2"),
+    url("../fonts/LabGrotesque-Light.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lab Grotesque"),
+    url("../fonts/LabGrotesque-Regular.woff2") format("woff2"),
+    url("../fonts/LabGrotesque-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Lab Grotesque"),
+    url("../fonts/LabGrotesque-Medium.woff2") format("woff2"),
+    url("../fonts/LabGrotesque-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Scania Sans CY";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Scania Sans CY"),
+    url("../fonts/ScaniaSansCY-Bold.woff2") format("woff2"),
+    url("../fonts/ScaniaSansCY-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Scania Sans CY Headline";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Scania Sans CY Headline"),
+    url("../fonts/ScaniaSansCYHeadline-Regular.woff2") format("woff2"),
+    url("../fonts/ScaniaSansCYHeadline-Regular.woff") format("woff");
+  font-display: swap;
+}
