@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Автоматические биокамины «Elite Fire»">
 
-  <title>Автоматические биокамины «Elite Fire»</title>
+  <title>Elite Fire</title>
 
 
   <link rel="stylesheet" href="./css/style.min.css">
@@ -54,17 +54,19 @@
 
   <main>
     <section class="promo">
-      <h1 class="promo__title">Автоматические биокамины</h1>
-      <p class="promo__price">от 99 000₽</p>
-      <ul class="promo__features-list">
-        <li class="promo__feature-item">Свое производство</li>
-        <li class="promo__feature-item">Доставка в любую точку мира</li>
-      </ul>
-      <img class="promo__image" src="" alt="Горящий биокамин.">
+      <div class="promo__wrapper wrapper">
+        <h1 class="promo__title title title--primary">Автоматические<br>биокамины</h1>
+        <p class="promo__price">от&nbsp;<span class="promo__price-value">99&nbsp;000₽</span></p>
+        <ul class="promo__features-list reset-list">
+          <li class="promo__feature-item">Свое производство</li>
+          <li class="promo__feature-item">Доставка в любую точку мира</li>
+        </ul>
+        <img class="promo__image" src="" alt="Горящий биокамин.">
+      </div>
     </section>
 
     <section class="advantages">
-      <h2 class="advantages__title">Настоящий высокий огонь у вас дома</h2>
+      <h2 class="advantages__title title title--secondary">Настоящий высокий огонь у вас дома</h2>
       <p class="advantages__text">Благодаря специальной технологии горения биоэтанола мы добились горения потрясающей красоты</p>
       <img class="advantages__image" src="" alt="Камин с высоким огнём.">
       <ul class="advantages__list">
@@ -75,7 +77,7 @@
     </section>
 
     <section class="refueling">
-      <h2 class="refueling__title">заправка</h2>
+      <h2 class="refueling__title title title--secondary">Заправка</h2>
       <p class="refueling__text-item">Внутри не просто труба. Спроектированный нами бак, самого большого обьема среди всех производителей</p>
       <p class="refueling__text-item">В наши топливные блоки встроен мощный насос. </p>
       <img class="refueling__image" src="" alt="Элементы камина для правильной заправки.">
@@ -92,7 +94,7 @@
     </section>
 
     <section class="smart">
-      <h2 class="smart__title">Умный камин - очень умный</h2>
+      <h2 class="smart__title title title--secondary">Умный камин - очень умный</h2>
       <div class="smart__text">
         <p class="smart__text-item">Даже если у Вас нет своего решения по умному дому.</p>
         <p class="smart__text-item">Мы отлично ладим с Яндекс.Алиса и Mi Home.</p>
@@ -223,7 +225,7 @@
     </div>
 
     <section class="task">
-      <h2 class="task__title">Есть задача? Есть решение!</h2>
+      <h2 class="task__title title title--secondary">Есть задача? Есть решение!</h2>
       <div class="task__list">
         <img class="task__item" src="" alt="">
       </div>
@@ -236,7 +238,7 @@
     </section>
 
     <section class="strengths">
-      <h2 class="strengths__title">Почемы мы можем многое?<br>Свои люди. Свои станки. Своя лаборатория</h2>
+      <h2 class="strengths__title title title--secondary">Почемы мы можем многое?<br>Свои люди. Свои станки. Своя лаборатория</h2>
       <div class="strengths__list">
         <img class="strengths__item" src="" alt="">
       </div>
@@ -249,7 +251,7 @@
     </section>
 
     <section class="constructor">
-      <h2 class="constructor__title">Вы автор вашего камина</h2>
+      <h2 class="constructor__title title title--secondary">Вы автор вашего камина</h2>
       <form class="constructor__form form">
         <div class="constructor__image">
           <img src="" alt="Ваш камин.">
@@ -387,61 +389,67 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contacts__title">Связаться с нами</h2>
+      <div class="contacts__wrapper wrapper">
+        <h2 class="contacts__title title title--secondary">Связаться с нами</h2>
 
-      <div class="contacts__list">
-        <div class="contacts__item">
-          <h3 class="contacts__item-title">WhatsApp</h3>
-          <p class="contacts__item-text">
-            <a class="contacts__item-link" href="#">+7911 306 4144</a>
-          </p>
+        <div class="contacts__list contacts__list--social">
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">WhatsApp</h3>
+            <p class="contacts__item-text">
+              <a class="contacts__item-link" href="#">+7911 306 4144</a>
+            </p>
+          </div>
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">Телеграмм</h3>
+            <p class="contacts__item-text">
+              <a class="contacts__item-link" href="#">@elite_fire</a>
+            </p>
+          </div>
         </div>
-        <div class="contacts__item">
-          <h3 class="contacts__item-title">Телеграмм</h3>
-          <p class="contacts__item-text">
-            <a class="contacts__item-link" href="#">@elite_fire</a>
-          </p>
-        </div>
-      </div>
 
-      <div class="contacts__list">
-        <div class="contacts__item">
-          <h3 class="contacts__item-title">Почта</h3>
-          <p class="contacts__item-text">
-            <a class="contacts__item-link contacts__item-link--accent" href="#">info@elite-fire.ru</a>
-          </p>
+        <div class="contacts__list contacts__list--address">
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">Почта</h3>
+            <p class="contacts__item-text">
+              <a class="contacts__item-link" href="#">info@elite-fire.ru</a>
+            </p>
+          </div>
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">Наш адрес</h3>
+            <p class="contacts__item-text">
+              Россия, г. Москва, Варшавское шоссе, 170 г
+            </p>
+          </div>
         </div>
-        <div class="contacts__item">
-          <h3 class="contacts__item-title">Наш адрес</h3>
-          <p class="contacts__item-text">
-            Россия, г. Москва, Варшавское шоссе, 170 г
-          </p>
-        </div>
-      </div>
 
-      <div class="contacts__list">
-        <div class="contacts__item">
-          <h3 class="contacts__item-title">Телефон</h3>
-          <p class="contacts__item-text">
-            <a class="contacts__item-link" href="#">8 911 306 4144</a>
-          </p>
-        </div>
-        <div class="contacts__item">
-          <a class="button button--bordered" href="#">Связаться с менеджером</a>
+        <div class="contacts__list contacts__list--back-call">
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">Телефон</h3>
+            <p class="contacts__item-text contacts__item-text--back-call">
+              <a class="contacts__item-link" href="#">8 911 306 4144</a>
+            </p>
+          </div>
+          <div class="contacts__item">
+            <a class="contacts__back-call-link button button--bordered" href="#">
+              <span class="button__inner">Связаться с менеджером</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__logo logo logo--footer">
-      <span class="logo__main">Elite Fire</span>
+    <div class="footer__wrapper wrapper">
+      <div class="footer__logo logo logo--footer">
+        <span class="logo__main">Elite Fire</span>
+      </div>
+      <div class="footer__copyright">
+        <span class="footer__copyright-year">2020-2021</span>
+        <span class="footer__copyright-company">ООО “МЕТАЛЛЭЛЕКТРОИНВЕСТ”</span>
+      </div>
+      <a class="footer__agreement">Пользовательское соглашение</a>
     </div>
-    <div class="footer__copyright">
-      <span class="footer__copyright-year">2020-2021</span>
-      <span class="footer__copyright-company">ООО “МЕТАЛЛЭЛЕКТРОИНВЕСТ”</span>
-    </div>
-    <div class="footer__agreement">Пользовательское соглашение</div>
   </footer>
   <script src="./js/main.js" type="module"></script>
 </body>

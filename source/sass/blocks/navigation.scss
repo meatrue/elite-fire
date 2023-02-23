@@ -1,6 +1,10 @@
 .navigation {
   display: flex;
   flex-wrap: wrap;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .navigation__item {
@@ -9,10 +13,24 @@
   &:not(:last-child) {
     margin-right: 45px;
   }
+
+  @include vp-1199 {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @include vp-767 {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .navigation__link {
   font-size: 13px;
-  text-transform: uppercase;
   color: #949494;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

@@ -1,0 +1,70 @@
+.footer {
+  padding: 15px $padding 18px;
+  background-color: $color-base-black;
+  border-top: 1px solid #232323;
+
+  @include vp-1199 {
+    padding: 15px $padding-tablet 18px;
+  }
+
+  @include vp-767 {
+    padding: 15px $padding-mobile 18px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer__logo {
+  margin-right: 110px;
+
+  @include vp-767 {
+    margin-right: 0;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  margin-right: auto;
+  color: $color-additional-dark;
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__copyright-year {
+  margin-right: 47px;
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
+}
+
+.footer__copyright-company {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.footer__agreement {
+  color: $color-additional-dark;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+
+  @include hover {
+    color: $color-additional-dark;
+  }
+}

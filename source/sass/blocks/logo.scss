@@ -10,6 +10,16 @@
   user-select: none;
 
   @include font-parameters ($ff-logo, 20px, 3.5, 400);
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+}
+
+.logo--footer .logo__main {
+  min-width: 98px;
+  font-size: 14px;
+  line-height: 5;
 }
 
 .logo__additional {
