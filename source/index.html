@@ -55,41 +55,81 @@
   <main>
     <section class="promo">
       <div class="promo__wrapper wrapper">
-        <h1 class="promo__title title title--primary">Автоматические<br>биокамины</h1>
+        <h1 class="promo__title title title--primary">Автоматические биокамины</h1>
         <p class="promo__price">от&nbsp;<span class="promo__price-value">99&nbsp;000₽</span></p>
         <ul class="promo__features-list reset-list">
-          <li class="promo__feature-item">Свое производство</li>
-          <li class="promo__feature-item">Доставка в любую точку мира</li>
+          <li class="promo__feature-item promo__feature-item--production">Свое производство</li>
+          <li class="promo__feature-item promo__feature-item--delivery">Доставка в любую точку мира</li>
         </ul>
-        <img class="promo__image" src="" alt="Горящий биокамин.">
+        <div class="promo__image">
+          <picture>
+            <source type="image/webp" srcset="./img/content/promo.webp 1x, ./img/content/promo@2x.webp 2x">
+            <img src="./img/content/promo.png" srcset="./img/content/promo@2x.png 2x" loading="lazy" width="700" height="429" alt="Горящий биокамин.">
+          </picture>
+        </div>
       </div>
     </section>
 
     <section class="advantages">
-      <h2 class="advantages__title title title--secondary">Настоящий высокий огонь у вас дома</h2>
-      <p class="advantages__text">Благодаря специальной технологии горения биоэтанола мы добились горения потрясающей красоты</p>
-      <img class="advantages__image" src="" alt="Камин с высоким огнём.">
-      <ul class="advantages__list">
-        <li class="advantages__item">Пламя яркое, высотой до 20 сантиметров</li>
-        <li class="advantages__item">Работает такой камин на биотопливе</li>
-        <li class="advantages__item">Он не дымит и не пахнет</li>
-      </ul>
+      <div class="advantages__wrapper wrapper">
+        <h2 class="advantages__title title title--secondary">Настоящий высокий огонь у&nbsp;вас дома</h2>
+        <p class="advantages__text">Благодаря специальной технологии горения биоэтанола мы добились горения потрясающей красоты</p>
+        <div class="advantages__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="./img/content/high-fire.webp 1x, ./img/content/high-fire@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/high-fire.webp 1x, ./img/content/high-fire@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="./img/content/high-fire.png 1x, ./img/content/high-fire@2x.png 2x">
+            <img src="./img/content/high-fire.png" srcset="./img/content/high-fire@2x.png 2x" loading="lazy" width="1289" height="495" alt="Камин с высоким огнём.">
+          </picture>
+        </div>
+        <ul class="advantages__list reset-list">
+          <li class="advantages__item advantages__item--fire">Пламя яркое, высотой до 20 сантиметров</li>
+          <li class="advantages__item advantages__item--fuel">Работает такой камин на биотопливе</li>
+          <li class="advantages__item advantages__item--smoke">Он не дымит и не пахнет</li>
+        </ul>
+      </div>
     </section>
 
     <section class="refueling">
-      <h2 class="refueling__title title title--secondary">Заправка</h2>
-      <p class="refueling__text-item">Внутри не просто труба. Спроектированный нами бак, самого большого обьема среди всех производителей</p>
-      <p class="refueling__text-item">В наши топливные блоки встроен мощный насос. </p>
-      <img class="refueling__image" src="" alt="Элементы камина для правильной заправки.">
-      <div class="refueling__label label">
-        <strong class="label__title">3,5 минуты</strong>
-        <span class="label__additional">и бак наполнен на 100%</span>
-      </div>
-      <div class="refueling__instruction">
-        <p class="refueling__images">
-          <span></span> - <span></span>
-        </p>
-        <p class="refueling__instruction-text">Достаточно вставить шланг<br>Нажать кнопку</p>
+      <div class="refueling__wrapper wrapper">
+        <div class="refueling__description">
+          <h2 class="refueling__title title title--secondary">Заправка</h2>
+          <p class="refueling__text-item">Внутри не просто труба. Спроектированный нами бак, самого большого обьема среди всех производителей</p>
+          <p class="refueling__text-item">В наши топливные блоки встроен мощный насос. </p>
+        </div>
+        <div class="refueling__additional">
+          <div class="refueling__image">
+            <picture>
+              <source type="image/webp" srcset="./img/content/refueling.webp 1x, ./img/content/refueling@2x.webp 2x">
+
+              <img src="./img/content/refueling.png" srcset="./img/content/refueling@2x.png 2x" loading="lazy" width="671" height="688" alt="Камин с высоким огнём.">
+            </picture>
+
+            <div class="refueling__label label">
+              <strong class="label__title">
+                <span class="label__title-main">3,5</span> <span class="label__title-additional">минуты</span>
+              </strong>
+              <span class="label__additional">и бак наполнен на 100%</span>
+            </div>
+          </div>
+          <div class="refueling__instruction">
+            <p class="refueling__icons">
+              <span>
+                <svg width="20" height="20" fill="#ffcf7a" role="img" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#hose"></use>
+                </svg>
+              </span>
+              <span class="refueling__images-separator"></span>
+              <span>
+                <svg width="20" height="20" fill="#ffcf7a" role="img" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#power-button"></use>
+                </svg>
+              </span>
+            </p>
+            <p class="refueling__instruction-text">Достаточно вставить шланг<br>Нажать кнопку</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -423,7 +463,7 @@
         </div>
 
         <div class="contacts__list contacts__list--back-call">
-          <div class="contacts__item">
+          <div class="contacts__item contacts__item--back-call">
             <h3 class="contacts__item-title">Телефон</h3>
             <p class="contacts__item-text contacts__item-text--back-call">
               <a class="contacts__item-link" href="#">8 911 306 4144</a>
