@@ -1,0 +1,57 @@
+.get-catalog {
+  padding: 0 $padding 100px;
+
+  @include vp-1199 {
+    padding: 0 $padding-tablet 100px;
+  }
+
+  @include vp-767 {
+    padding: 0 $padding-mobile 100px;
+  }
+}
+
+.get-catalog__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 215px;
+
+  @include font-parameters($ff-base, 30px, 1.47, 300);
+
+  p {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 35px;
+    text-align: center;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 401px;
+    height: 298px;
+    transform: translate(-50%, 50%);
+    content: "";
+    background-image: url("../img/background/get-catalog-filter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @include vp-1199 {
+    padding: 0 60px;
+    font-size: 24px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    font-size: 20px;
+  }
+}
+
+.get-catalog__button {
+  position: relative;
+  z-index: 2;
+  padding: 14px 64px;
+}

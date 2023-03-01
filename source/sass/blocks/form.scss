@@ -1,0 +1,116 @@
+.form__checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form__checkbox-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  color: $color-base-black;
+  border: 1px solid $color-additional-light;
+  border-radius: 2px;
+  transition: all $trans-base;
+}
+
+.form__checkbox-label:hover .form__checkbox-control {
+  opacity: 0.6;
+}
+
+.form__checkbox:checked + .form__checkbox-control {
+  background-color: $color-additional-light;
+
+  &::after {
+    content: "+";
+  }
+}
+
+.form__checkbox:focus-visible + .form__checkbox-control {
+  outline: 2px solid $color-accent;
+  outline-offset: 2px;
+}
+
+.form__range {
+  display: flex;
+  align-items: center;
+}
+
+.form__range-label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 3;
+}
+
+.form__range-control {
+  display: block;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 100%;
+  max-width: 441px;
+  height: 1px;
+
+  -webkit-appearance: none; /* stylelint-disable-line */
+  -moz-appearance: none; /* stylelint-disable-line */
+  appearance: none;
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 100%;
+    background-color: #646464;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 100%;
+    background-color: #646464;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background-color: $color-accent;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-thumb {
+    width: 30px;
+    height: 30px;
+    background-color: $color-accent;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+    -webkit-appearance: none; /* stylelint-disable-line */
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  @include vp-1199 {
+    margin-left: 25px;
+    margin-right: 25px;
+
+    &::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+    }
+
+    &::-webkit-slider-thumb {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
